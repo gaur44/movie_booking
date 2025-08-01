@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Booking - {{ movie.title }} - MovieFlix{% endblock %}
+
+{% block content %}
+<div class="progress-container">
+    <div class="progress-title">🚧 In Progress...</div>
+    <div class="progress-text">
+        <p>Booking system for <strong>"{{ movie.title }}"</strong> is currently under development.</p>
+        <p>Please check back soon!</p>
+        <br>
+        <a href="{{ url_for('movies') }}" class="book-btn">← Back to Movies</a>
+    </div>
+</div>
+{% endblock %}
